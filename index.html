@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO | SHUBHAM GOYAL</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#AboutMe">About Me</a>
+            <a href="#Education">Education</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Certificates">Certificates</a>
+            <a href="#Projects">Projects</a>
+        </nav>
+    </header>
+
+    <header class="site">
+        <nav class="site">
+            <a>goyalshubham@gmail.com</a>
+            <a href="https://github.com/shubhamgoyal575">Github</a>
+            <a href="https://www.linkedin.com/in/shubham-goyal-95344a152/">Linkedin</a>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <img src="C:\Users\shubh\Desktop\html_portf\41.jpg" alt="Shubham Goyal">
+        <div class="profile-details">
+            <h1>Shubham Goyal</h1>
+            <p><i>Data Scientist</i></p>
+            <h5>
+                <i>📊 Skills: Data Analysis | Data Visualization | Python | SQL | Excel | Power BI | Tableau</i>
+                 <br><br>
+                <i>🎯 Interests: Predictive Analytics | Business Intelligence | Machine Learning | Dashboard Development</i>
+            </h5>
+            
+        </div>
+    </section>
+
+    <section id="AboutMe" class="about-me">
+        <h1>ABOUT ME</h1>
+        <p>I am a passionate and detail-oriented aspiring Data Analyst with a strong foundation in data analysis, visualization, and problem-solving. 
+            With a background in business and analytics, I thrive in dynamic environments that challenge me to derive meaningful insights from complex datasets.
+        </p>
+        <p>
+            I have hands-on experience working with real-world data, having completed a four-week virtual internship at AtliQ Technologies, where I focused on data cleaning, visualization, and generating actionable insights. Additionally, my experience in managing an online community of over 16,000 
+            followers and organizing events with CollegeTravellers has strengthened my leadership, collaboration, and strategic decision-making skills.
+        </p>
+        <p>
+            I am always eager to explore new tools and methodologies in the data domain and aim to contribute to innovative, data-driven solutions. 
+            My goal is to join an organization that fosters growth and encourages analytical thinking.
+        </p>
+
+    </section>
+
+    <div id ="Education" class="education-block">
+        <h1>EDUCATION</h1>
+    
+        <div class="education-container">
+            <div class="education">
+                <h2>Bachelor of Commerce (B-Tech)</h2>
+                <p>Guru Gobind Singh Indraprastha University (IPU)</p>
+                <p>2017 - 2021</p>
+                <p>CGPA-8.9</p>
+            </div>
+            <div class="education">
+                <h2>High School (12th)</h2>
+                <p>Kendriya Vidyalaya AFS Gogha School</p>
+                <p>2015 - 2016</p>
+                <p>Percentage-81.75%</p>
+            </div>
+            <div class="education">
+                <h2>High School (10th)</h2>
+                <p>Kendriya Vidyalaya AFS Gogha School</p>
+                <p>2013 - 2014</p>
+                <p>CGPA-9.6</p>
+            </div>
+        </div>
+    </div>
+    
+        
+    <div id="Skills" class="skills-block">
+        <div class="skills-heading">
+            <h1>SKILLS</h1>
+        </div>
+        <div class="skills">
+            <span class="skill">Excel</span>
+            <span class="skill">SQL</span>
+            <span class="skill">NoSQL</span>
+            <span class="skill">Python</span>
+            <span class="skill">Power BI</span>
+            <span class="skill">Tableau</span>
+            <span class="skill">Hypothesis Testing</span>
+            <span class="skill">Time Series Analysis</span>
+            <span class="skill">Machine Learning</span>
+        </div>
+    </div>
+
+    <div id="Certificates" class="certificate-block">
+        <h1 align="center">CERTIFICATES</h1>
+        <div class="certificate">
+            <img src="E:\AAAA\New folder\certificate_image\upgrad_hackthon.jpg" alt="Hackthon">>
+            <img src="E:\AAAA\New folder\certificate_image\google.jpg" alt="Coursera Google">>
+            <img src="E:\AAAA\New folder\SQL (Intermediate).jpg" alt="Sql Intermedidate HackerRank Cert">
+            <img src="E:\AAAA\New folder\SQL BASICS.jpg" alt="Sql Basic HackerRank Cert">>
+            <img src="E:\AAAA\New folder\certificate_image\Accenture.jpg" alt="Accenture">>
+            <img src="E:\AAAA\New folder\certificate_image\pwc.jpg" alt="pwc">>
+            <img src="E:\AAAA\New folder\certificate_image\jpmorgan.jpg" alt="jpmorgan">>
+            <img src="E:\AAAA\New folder\certificate_image\ExcelCB.jpg" alt="Execel Code Basic">>
+            <img src="E:\AAAA\New folder\certificate_image\SQLCB.jpg" alt="SQL">>
+            <img src="E:\AAAA\New folder\certificate_image\powerbiCB.jpg" alt="powerbiCB">>
+            <img src="E:\AAAA\New folder\certificate_image\ipl_pro.png" alt="IPL Project appreciation Cert">>
+        </div>
+        <button class="arrow left" onclick="moveSlide(-1)">&#8249;</button>
+        <button class="arrow right" onclick="moveSlide(1)">&#8250;</button>
+    </div>
+    
+    <script>
+        let currentIndex = 0;
+    
+        function moveSlide(direction) {
+          const slider = document.querySelector('.certificate');
+          const slides = slider.children.length;
+
+          currentIndex += direction;
+
+          if (currentIndex < 0) {
+            currentIndex = slides - 1;
+          } else if (currentIndex >= slides) {
+            currentIndex = 0;
+          }
+    
+          const slideWidth = slider.children[0].offsetWidth;
+          slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+        }
+    </script>
+
+    <div id="Projects" class="project-block">
+        <h1>PROJECTS</h1>
+
+        <div class="filter-buttons">
+            <button onclick="filterProjects('SQL')" id="default-btn">SQL</button>
+            <button onclick="filterProjects('Visualization')">Visualization</button>
+            <button onclick="filterProjects('Hypothesis')">Hypothesis Testing</button>
+            <button onclick="filterProjects('TimeSeries')">Time Series Analysis</button>
+            <button onclick="filterProjects('MachineLearning')">Machine Learning</button>
+            <button onclick="filterProjects('NLP')">Natural Language Processing</button>
+        </div>
+
+        <!--  SQL -->
+        <div class="project-container">
+            <div class="project SQL">
+                <img src="C:\Users\shubh\Desktop\html_portf\Bike.jpg" alt="SQL Project">
+                <div class="project-content"
+                    <p>Conducted data analysis on a Bike Rental Shop dataset using MySQL Workbench. 
+                        Performed queries to extract insights on rental trends, customer behavior, and peak usage times for data-driven decision-making.</p>
+                    <a href = "https://github.com/shubhamgoyal575/SQL-Project-Collection/tree/main/Bike%20Rental%20Shop">Project</a>
+                </div>
+            </div>
+            <div class="project SQL reverse">
+                <img src="C:\Users\shubh\Desktop\html_portf\nft.jpg" alt="SQL Project">
+                <p>Performed NFT and cryptocurrency analysis using SQL to explore market trends, transaction patterns, and pricing insights. 
+                    Executed complex queries to extract valuable data-driven insights for better investment decisions.</p>
+                <a href = "https://github.com/shubhamgoyal575/SQL-Project-Collection/tree/main/NFT-CaseStudy">Project</a>
+            </div>
+
+            <!--  Power Bi or Tableau -->
+            <div class="project Visualization">
+                <img src="C:\Users\shubh\Desktop\html_portf\Health.jpg" alt="HealthCare Project">
+                <p>Created a comprehensive healthcare dashboard in Tableau to visualize patient data, treatment outcomes, and hospital performance. 
+                    Leveraged interactive features to track key metrics like patient visits, recovery rates, and operational efficiency.</p>
+                <a href="https://github.com/shubhamgoyal575/Tableau-Visualization-Dashboard/tree/main/Healthcare_Analytics">Project</a>
+            </div>
+            <div class="project Visualization">
+                <img src="C:\Users\shubh\Desktop\html_portf\Sales.jpg" alt="Sales Performance Project">
+                <p>Developed a Sales Performance Analysis dashboard in Tableau to visualize key metrics such as revenue, sales trends, and regional performance. 
+                    Utilized filters and interactive elements to provide actionable insights for sales optimization and strategy planning.</p>
+                <a href="https://github.com/shubhamgoyal575/Tableau-Visualization-Dashboard/tree/main/Sales_Performance_Analytics">Project</a>
+            </div>
+            <div class="project Visualization">
+                <img src="C:\Users\shubh\Desktop\html_portf\Hospitality.jpg" alt="Hospitality Domain Project">
+                <p>Developed interactive Power BI dashboards for the hospitality domain, analyzing occupancy rates, revenue trends, and customer demographics. 
+                    Provided data-driven insights to optimize operations and enhance guest experience.</p>
+                <a href="https://github.com/shubhamgoyal575/Hospitality-Domain">Project</a>
+            </div>
+            <div class="project Visualization">
+                <img src="C:\Users\shubh\Desktop\html_portf\Diwali.jpg" alt="Diwali-Sankranti Sales Project">
+                <p>Analyzed Diwali and Sankranti sales data using Power BI to uncover trends, customer preferences, and revenue patterns. 
+                    Created interactive dashboards for data-driven decision-making and sales optimization.</p>
+                <a href="https://github.com/shubhamgoyal575/Diwali-Sankranti-promotion-sales">Project</a>
+            </div>
+            <div class="project Visualization">
+                <img src="C:\Users\shubh\Desktop\html_portf\ipl.jpg" alt="IPL Insights Project">
+                <p>Developed interactive IPL dashboards in Power BI to visualize team performance, player statistics, and match trends. 
+                    Utilized data modeling and DAX to extract key insights for cricket analytics.</p>
+                <a href="https://github.com/shubhamgoyal575/IPL-INSIGHT">Project</a>
+            </div>
+
+            <!--Hypothesis Testing-->
+            <div class="project Hypothesis">
+                <img src="C:\Users\shubh\Desktop\html_portf\FBad.jpg" alt="AdCampaign Hypothesis Analysis">
+                <p>Performed hypothesis testing on the effectiveness of AdWords and Facebook ad campaigns. 
+                    Analyzed conversion rates, engagement metrics, and campaign performance to determine statistically significant differences in ROI across platforms.</p>
+                <a href="https://github.com/shubhamgoyal575/AdCampaignAnalysis">Project</a>
+            </div>
+            <div class="project Hypothesis">
+                <img src="C:\Users\shubh\Desktop\html_portf\Hypothesis.jpg" alt="Hypothesis Testing">
+                <p>Conducted hypothesis testing on four different problem statements to validate assumptions and draw data-driven conclusions. 
+                    Applied statistical techniques to analyze datasets and assess the significance of various factors.</p>
+                <a href="https://github.com/shubhamgoyal575/Hypothesis_Testing">Project</a>
+            </div>
+
+            <!--Time Series Analysi-->
+            <div class="project TimeSeries">
+                <img src="C:\Users\shubh\Desktop\python\upgrad\Images\TimeSA.jpg" alt="Netflix TSA">
+                <p>Performed time series analysis on Netflix data to forecast trends in viewership, content popularity, and subscription growth. 
+                    Visualize and identify seasonal patterns and long-term predictions.</p>
+                <a href="https://github.com/shubhamgoyal575/Time-Series-Analysis">Project</a>
+            </div>
+
+            <!--Machine Learning-->
+            <div class="project MachineLearning">
+                <img src="C:\Users\shubh\Desktop\python\upgrad\Images\marketBasket.jpg" alt="Market Basket Anaysis">
+                <p>Performed Market Basket Analysis using machine learning techniques to identify associations between products in customer transactions. 
+                    Applied algorithms like Apriori to uncover frequent itemsets and generate product recommendations for enhancing sales strategies.</p>
+                <a href="https://github.com/shubhamgoyal575/Machine-Learning-Case-studies/tree/main/Market_basket_caseStudy">Project</a>
+            </div>
+
+            <!--  NLP -->
+            <div class="project NLP">
+                <img src="C:\Users\shubh\Desktop\python\upgrad\Case Study\NLP\Sentiment\sentiment.jpg" alt="Sentiment Analysis Project">
+                <p>Developed a Sentiment Analysis model to classify text as positive, negative, or neutral using NLP techniques.
+                    Utilized machine learning algorithms and data preprocessing to analyze sentiments in real-world datasets.</p>
+                <a href="https://github.com/shubhamgoyal575/Sentiment-Analysis-NLP-">Project</a>
+            </div>
+            <div class="project NLP">
+                <img src="C:\Users\shubh\Desktop\python\upgrad\Case Study\NLP\txtp.jpg" alt="Text Classification and Topic Modelling Project">
+                <p>Implemented Text Classification and Topic Modeling to categorize and extract key themes from textual data. 
+                    Leveraged NLP techniques, machine learning, and LDA for insightful analysis and automated topic discovery.</p>
+                <a href="https://github.com/shubhamgoyal575/Fashionkart-NLP-Analysis">Project</a>
+            </div>
+            <div class="project NLP">
+                <img src="C:\Users\shubh\Desktop\python\upgrad\Images\spam.jpg" alt="Spam Detection Project">
+                <p>Developed a Spam Detection system using NLP techniques to classify messages as spam or not spam. 
+                    Utilized text preprocessing, feature extraction, and machine learning models to accurately identify and filter unwanted content.</p>
+                <a href="https://github.com/shubhamgoyal575/Spam_Detective">Project</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function filterProjects(category) {
+            let projects = document.querySelectorAll('.project');
+            projects.forEach(project => {
+                project.style.display = project.classList.contains(category) ? "block" : "none";
+            });
+        }
+    
+        // Show the first category (SQL) by default
+        window.onload = function () {
+            filterProjects('SQL');
+        };
+    </script>
+
+<div class="extraCiricular-block">
+    <h1>ACTIVITIES</h1>
+
+    <h3>INTERNSHIP</h3>
+
+    <div class="activity">
+        <h4>MedTour Easy</h4>
+        <p>
+            ✅ <b>Analyzed and Visualized Data:</b> Cleaned and processed datasets to generate insights and create interactive dashboards.<br>
+            ✅ <b>Contributed to Data-Driven Decisions:</b> Assisted in executing analytics tasks that improved business strategies and efficiency.
+        </p>
+    </div>
+
+    <div class="activity">
+        <h4>4-Week Virtual Internship | AtliQ Technologies</h4>    
+        <p>
+            ✅ <b>Data Cleaning & Transformation:</b> Processed raw data for better accuracy and usability.<br>
+            ✅ <b>Dashboard Development:</b> Created interactive dashboards for business insights.<br>
+            ✅ <b>Stakeholder Communication:</b> Designed presentations to communicate findings effectively.
+        </p>
+    </div>
+
+    <h3>EXTRA-CURRICULAR ACTIVITIES</h3>
+
+    <div class="activity">
+        <h4>DelhiNCR Meme Page</h4>
+        <p>
+            ✅ <b>Instagram Growth:</b> Managed a meme page with 16,000+ followers.<br>
+            ✅ <b>Content Strategy:</b> Created viral content and increased engagement.
+        </p>
+    </div>
+
+    <div class="activity">
+        <h4>College Travellers</h4>
+        <p>
+            ✅ <b>Event Management:</b> Organized 20+ trips, fostering a vibrant community.<br>
+            ✅ <b>Logistics & Marketing:</b> Managed customer relations and promotions.
+        </p>
+    </div>
+</div>
+    
+</body>
+</html>
