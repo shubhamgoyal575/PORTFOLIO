@@ -1,13 +1,33 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
-    font-family: 'Inter', sans-serif;
+    background-color: #E5E5E5;
+    font-family: 'Lora', serif; 
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;  /* Default stylish heading font */
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Gives a professional look */
+}
+
+h1 {
+    font-size: 32px; /* Large for main headings */
+    color: #2C3E50;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 header {
     margin-top: 10px;
-    background-color: #BFD7ED;
+    background-color: #F5F5F5;
     padding: 10px;
     text-align: right;
     width: 1250px;
@@ -19,7 +39,7 @@ header {
 nav a {
     margin-top: 20px;
     text-decoration: none;
-    color: #333;
+    color:#217dbb;
     font-weight: bold;
     width: 1250px;
     border-radius: 15px;
@@ -29,16 +49,44 @@ nav a {
 
 .site{
     margin-top: 10px;
-    background-color: #BFD7ED;
+    background-color: #F5F5F5;
     padding: 2px;
     text-align: right;
 }
+
+.resume-download {
+    gap: 8px; /* Space between icon and text */
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px; /* Adjust height */
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px; /* Set a fixed height */
+    line-height: 40px; /* Center the text vertically */
+    width:80px;
+}
+
+.resume-download:hover {
+    background-color: #217dbb;
+}
+
+/* Style for the download icon */
+.resume-download i {
+    font-size: 12px;
+}
+
+.download-icon {
+    width: 20px; /* Adjust size */
+    height: 20px;
+    vertical-align: middle;
+}
+
 .profile {
     margin-top: 20px;
     display: flex;
     align-items: right;
     padding: 20px;
-    background-color:#BFD7ED;
+    background-color:#F5F5F5;
     width: 1200px;
     height: 450px;
     justify-content: space-between;
@@ -83,7 +131,7 @@ nav a {
 }
 
 .about-me{
-    background-color: #BFD7ED;
+    background-color:#F5F5F5;
     margin-top: 5px;
     width: 1200px;
     height: 500px;
@@ -91,11 +139,12 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px auto;
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
 }
 
 .about-me h1{
+    margin-top: 5px;
     font-size: 60px;
     margin-bottom: 10px;
 }
@@ -103,8 +152,9 @@ nav a {
 .about-me p{
     margin-top: 10px;
     font-size:large;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-family: 'Lora', serif; 
 }
 
 .education-block {
@@ -112,13 +162,13 @@ nav a {
     width: 1200px;
     min-height: 400px;
     height: 500px;
-    background-color: #BFD7ED;
+    background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     margin: 20px auto;
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
     
 }
@@ -131,18 +181,18 @@ nav a {
 }
 
 .education-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .education {
-    width: 400px;
+    width: 380px;
     border: 1px solid #ddd;
     text-align: center;
-    background-color: #E8C1C1;
+    background-color:beige;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -150,13 +200,13 @@ nav a {
 
 .skills-block {
     margin-top: 20px;
-    background-color:#BFD7ED;
+    background-color:#F5F5F5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     width: 1200px;
-    height: 500px;
+    height: 400px;
     position: relative;
     overflow: hidden;
     margin: 20px auto;
@@ -168,6 +218,7 @@ nav a {
     font-size: 60px;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .skills {
@@ -195,29 +246,30 @@ nav a {
 }
 
 /* Random positioning */
-.skill:nth-child(1) { top: 40px; left: 10%; }
-.skill:nth-child(2) { top: 110px; left: 35%; }
-.skill:nth-child(3) { top: 210px; left: 65%; }
-.skill:nth-child(4) { top: 230px; left: 25%; }
-.skill:nth-child(5) { top: 230px; left: 50%; }
-.skill:nth-child(6) { top: 60px; left: 75%; }
-.skill:nth-child(7) { top: 70px; left: 21%; }
-.skill:nth-child(8) { top: 40px; left: 49%; }
-.skill:nth-child(9) { top: 170px; left: 80%; }
+.skill:nth-child(1) { top: 50px; left: 5%; }
+.skill:nth-child(2) { top: 100px; left: 15%; }
+.skill:nth-child(3) { top: 50px; left: 25%; }
+.skill:nth-child(4) { top: 100px; left: 35%; }
+.skill:nth-child(5) { top: 50px; left: 45%; }
+.skill:nth-child(6) { top: 100px; left: 55%; }
+.skill:nth-child(7) { top: 50px; left: 65%; }
+.skill:nth-child(8) { top: 100px; left: 75%; }
+.skill:nth-child(9) { top: 50px; left: 85%; }
 
 .certificate-block {
-    background-color: #BFD7ED;
+    background-color: #F5F5F5;
     width: 1200px;
     margin: 20px auto;
     overflow: hidden;
     position: relative;
     border: 2px solid #ddd;
     border-radius: 15px;
-    height: 600px;
+    height: 400px;
     margin: 20px auto;
     padding: 40px;
   }
 .certificate-block h1{
+    margin-top: 5px;
     font-size: 50px;
     margin-bottom: 5px;
   }
@@ -226,9 +278,11 @@ nav a {
     transition: transform 0.5s ease-in-out;
   }
 .certificate img {
+    margin-top: 15px;
     flex-shrink: 0;
-    height:500px;
+    height:300px;
     width: auto;
+    columns: 3;
   }
 .arrow {
     position: absolute;
@@ -254,7 +308,7 @@ nav a {
     border-radius: 15px;
     min-height: 500px;
     height: auto;
-    background-color: #BFD7ED;
+    background-color: #F5F5F5;
     display: flex;
     flex-direction: column; /* Stack heading, buttons, and projects */
     align-items: center;
@@ -264,6 +318,7 @@ nav a {
 }
 
 .project-block h1 {
+    margin-top: 5px;
     font-size: 60px;
     text-align: center;
     margin-bottom: 10px; /* Space between heading & buttons */
@@ -284,6 +339,9 @@ nav a {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: auto;
+    justify-content: center;
+    display: flex;
 }
 
 .filter-buttons button:hover {
@@ -294,39 +352,42 @@ nav a {
     background-color: None;
     width: 100%;
     display: flex;
-    flex-wrap:wrap-reverse;
-    justify-content: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
     gap: 20px;
 }
 
 .project {
     display: flex; 
-    flex-direction: row; /* Ensure the image is on the left and the text is on the right */
-    width: 80%;
+    flex-direction: columns; /* Ensure the image is on the left and the text is on the right */
+    width: 28%;
     border-radius: 20px;
-    padding: 50px;
+    padding: 20px;
     border: 1px solid #ddd;
     background-color: aliceblue;
+    align-items: center;
+
 }
 
 .project-container img {
-    max-width: 200px;
-    width: auto;
-    max-height: 200px;
-    height: auto;
+    
+    width: 300px;
+    
+    height: 200px;
     border-radius: 10px;
     margin-right: 20px; /* Adds space between image and text */
+    margin: 0 auto; /* Centers the image */
+    display: block; /* Ensures it respects margin auto */
+
 }
 
 .project-container p {
     flex: 1; /* Takes remaining space */
-    text-align: left; /* Align text to the left */
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 15px;
 }
 
 .project-container a {
-    margin-top: 10px;
+    margin-top: auto;
     text-decoration:none;
     background-color: #3498db;
     color: white;
@@ -342,15 +403,15 @@ nav a {
     margin: 20px auto;
     padding: 40px;
     max-width: 1200px;
-    background-color: #BFD7ED;
+    background-color: #F5F5F5;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .extraCiricular-block h1 {
+    margin-top: 5px;
     font-size: 48px;
     text-align: center;
-    color: #2C3E50;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -358,7 +419,6 @@ nav a {
 .extraCiricular-block h3 {
     text-align: center;
     font-size: 28px;
-    color: #34495E;
     margin-top: 30px;
     border-bottom: 2px solid #2C3E50;
     display: inline-block;
@@ -375,14 +435,12 @@ nav a {
 
 .activity h4 {
     font-size: 22px;
-    color: #2C3E50;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .activity p {
     font-size: 18px;
-    color: #555;
     line-height: 1.6;
 }
 
