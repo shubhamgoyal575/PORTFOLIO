@@ -255,7 +255,7 @@ nav a {
 .skill:nth-child(7) { top: 50px; left: 65%; }
 .skill:nth-child(8) { top: 100px; left: 75%; }
 .skill:nth-child(9) { top: 50px; left: 85%; }
-.skill:nth-child(10){top:165px;left:90%}
+.skill:nth-child(10) {top:165px; left:90%;}
 
 .certificate-block {
     background-color: #F5F5F5;
