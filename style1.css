@@ -197,6 +197,45 @@ nav a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.courses-block {
+    margin-top: 10px;
+    width: 1200px;
+    min-height: 400px;
+    height: 500px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    
+}
+
+.courses-block h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.courses-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.courses {
+    width: 380px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color:beige;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 .skills-block {
     margin-top: 20px;
